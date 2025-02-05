@@ -1,0 +1,2 @@
+# CensorSwears
+a bd plugin

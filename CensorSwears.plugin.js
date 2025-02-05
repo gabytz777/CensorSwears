@@ -31,8 +31,6 @@ module.exports = class CensorSwears {
             customBadWords: [],
             censorChar: '*'
         };
-
-        // Add CSS styles when plugin loads
         BdApi.injectCSS('CensorSwears', `
             .censor-reveal-button {
                 background: #000000;
@@ -71,7 +69,7 @@ module.exports = class CensorSwears {
             this.observer.disconnect();
             this.observer = null;
         }
-        // Remove CSS when plugin stops
+
         BdApi.clearCSS('CensorSwears');
     }
 
